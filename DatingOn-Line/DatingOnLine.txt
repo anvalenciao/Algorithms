@@ -1,0 +1,70 @@
+Alex registered in an online dating system to search for the perfect partner. The system requires each of its members to fill a form specifying how much they enjoy N different activities, grading them on a scale from 0 to 100. To present this information to potential dates, the system creates a profile featuring a special kind of polygon called "radial diagram". 
+
+A radial diagram for N activities is drawn by marking N points on the plane. Starting from the vertical direction, the i-th point in clockwise order represents the i-th activity specified by the member, and is a distance S_i away from the center of the diagram, where S_i is the score given by the member for the corresponding activity. The angle sustained at the center of the diagram from each pair of consecutive points is always the same, and the polygon is formed by drawing the segments whose endpoints are consecutive points. Note that for the purposes of the radial diagram, the first and last points are considered to be consecutive. 
+
+For example, if N = 6 Alex might specify the following activities: singing with score S_1 = 10, running with score S_2 = 60, listening to music with score S_3 = 70, traveling with score S_4 = 70, eating out with score S_5 = 80, and visiting museums with score S_6 = 80. Then the corresponding radial diagram would be as shown in the figure on the right. 
+
+The area of a radial diagram depends on the order in which the different activities are specified, and Alex suspects that a profile depicting a radial diagram with greater area might be more successful. For example, the radial diagram in the following figure features the same activities and scores as the example above, but has a greater area. 
+
+Alex has asked you to write a program to find the maximum possible area of a radial diagram given a list of activities graded with scores between 0 and 100.
+
+Input 
+
+The input file contains several test cases, each of them as described below. 
+
+The first line contains an integer N representing the number of activities (3 <= N <= 10^5 ). The second line contains N integers S_1, S_2, . . . , S_N representing the scores given by Alex to each activity (0 <= S_i <= 100 for i = 1, 2, . . ., N). 
+
+Output 
+
+For each test case, output a line with a rational number representing the maximum possible area of a radial diagram featuring the scores given in the input. The result must be output as a rational number with exactly 3 digits after the decimal point, rounded if necessary. 
+
+Sample Input
+6
+10 60 70 70 80 80
+3
+100 100 100
+7
+16 37 50 35 12 39 24
+
+Sample Output
+10002.593
+12990.381
+2772.765
+
+
+-------------------------------------------
+
+Alex se registró en un sistema de citas online para buscar la pareja perfecta. El sistema requiere que cada uno de sus miembros rellene un formulario especificando cuánto disfrutan de N actividades diferentes, calificándolas en una escala de 0 a 100. Para presentar esta información a las posibles citas, el sistema crea un perfil con un tipo especial de polígono llamado "diagrama radial". 
+
+Un diagrama radial para N actividades se dibuja marcando N puntos en el plano. Partiendo de la dirección vertical, el punto i-ésimo en el sentido de las agujas del reloj representa la i-ésima actividad especificada por el miembro, y se encuentra a una distancia S_i del centro del diagrama, donde S_i es la puntuación dada por el miembro para la actividad correspondiente. El ángulo sostenido en el centro del diagrama a partir de cada par de puntos consecutivos es siempre el mismo, y el polígono se forma dibujando los segmentos cuyos puntos finales son puntos consecutivos. Nótese que para los propósitos del diagrama radial, el primer y el último punto se consideran consecutivos. 
+
+Por ejemplo, si N = 6 Alex podría especificar las siguientes actividades: cantar con puntuación S_1 = 10, correr con puntuación S_2 = 60, escuchar música con puntuación S_3 = 70, viajar con puntuación S_4 = 70, comer fuera con puntuación S_5 = 80, y visitar museos con puntuación S_6 = 80. Entonces el diagrama radial correspondiente sería como se muestra en la figura de la derecha. 
+
+El área de un diagrama radial depende del orden en el que se especifican las diferentes actividades, y Alex sospecha que un perfil que represente un diagrama radial de mayor área podría tener más éxito. Por ejemplo, el diagrama radial de la figura siguiente presenta las mismas actividades y puntuaciones que el ejemplo anterior, pero tiene una superficie mayor. 
+
+Alex le ha pedido que escriba un programa para encontrar el área máxima posible de un diagrama radial dada una lista de actividades calificadas con puntuaciones entre 0 y 100.
+
+Entrada 
+
+El archivo de entrada contiene varios casos de prueba, cada uno de ellos como se describe a continuación. 
+
+La primera línea contiene un número entero N que representa el número de actividades (3 <= N <= 10^5 ). La segunda línea contiene N números enteros S_1, S_2, . . . , S_N representando las puntuaciones dadas por Alex a cada actividad (0 <= S_i <= 100 para i = 1, 2, . . ., N). 
+
+Salida 
+
+Para cada caso de prueba, se debe emitir una línea con un número racional que represente el área máxima posible de un diagrama radial con las puntuaciones dadas en la entrada. El resultado debe ser emitido como un número racional con exactamente 3 dígitos después del punto decimal, redondeado si es necesario. 
+
+Muestra de entrada
+6
+10 60 70 70 80 80
+3
+100 100 100
+7
+16 37 50 35 12 39 24
+
+Muestra de salida
+10002.593
+12990.381
+2772.765
+
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
