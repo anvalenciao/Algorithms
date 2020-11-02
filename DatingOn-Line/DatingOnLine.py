@@ -21,16 +21,19 @@ https://udebug.com/LA/7889
 +----+----+----+----+----+----+----+
 | 12 | 16 | 24 | 35 | 37 | 39 | 50 |
 +----+----+----+----+----+----+----+
-| 16 | 35 | 39 | 50 | 37 | 24 | 12 |
-+----+----+----+----+----+----+----+
-
 '''
+import math
 
-def process(N, S):
-    print(N)
-    print(S)
-    return True
+def calculate(N, S):
+    S.sort()
+    B = math.pi/N
+    CS = math.sin(B)*math.cos(B)
+    A = S[0]*S[1]*CS
+    for i in range(2, N):
+        A += S[i-2]*S[i]*CS
+    A += S[i-1]*S[i]*CS
 
+    return round(A, 3)
 
 def UVaLive7889_DatingOnLine():
     while True:
@@ -45,10 +48,10 @@ def UVaLive7889_DatingOnLine():
             break
         except KeyboardInterrupt:
             break
-        if N < 2:
+        if N < 3:
             #print()
             break
-        print(process(N, S))
+        print(calculate(N, S))
     return
 
 UVaLive7889_DatingOnLine()
